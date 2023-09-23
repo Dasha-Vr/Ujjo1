@@ -1,0 +1,210 @@
+.motto{
+  margin-top: -1px;
+
+  &__container{
+    padding: 60px 30px;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before{
+      content: "";
+      display: block;
+      width: 225px;
+      height: 156px;
+      background-image: url("../img/svg/scorpion.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include mobile{
+        width: 100px;
+        height: 70px;
+      }
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      width: 225px;
+      height: 156px;
+      background-image: url("../img/svg/scorpion.svg");
+      transform: scaleX(-1);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include mobile{
+        width: 100px;
+        height: 70px;
+      }
+    }
+
+
+  }
+
+  &__title{
+    max-width: 785px;
+    color: var(--dark-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72.576px; /* 111.655% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0 auto;
+
+    @include tablet{
+      padding: 40px 0;
+    }
+
+    @include mobile{
+      padding: 20px;
+      font-size: 45px;
+      line-height: 50px;
+    }
+
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+  }
+
+
+  &__items{
+    padding-top: 20px;
+    position: relative;
+
+
+  }
+
+  &__item{
+    @include tablet{
+      width: calc(50% - 13px);
+
+      @include mobile{
+        width: 100%;
+      }
+    }
+  }
+
+  &__decorativ{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    left: 50%;
+    top: 20px;
+    width: calc(100% - 40px);
+    transform: translateX(-50%);
+
+    svg{
+      &:nth-child(2){
+        transform: translateX(-15px);
+      }
+    }
+
+    svg{
+      &:nth-child(3){
+        transform: translateX(15px);
+      }
+    }
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  &__ticker{
+    margin-top: -1px;
+  }
+
+  &__strip{
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.92px; /* 152.471% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 23px 0;
+    border-bottom: 1px solid var(--dark-color);
+    border-top: 1px solid var(--dark-color);
+  }
+
+
+&__img{
+  padding: 20px;
+
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+}
+
+
+
+
+.card{
+  background-image: url("../img/svg/motto-back.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 23px;
+  padding-top: 100px;
+  min-height: 658px;
+
+@include tablet{
+  min-height: 700px;
+}
+
+@include mobile{
+  min-height: 500px;
+}
+
+  &__text{
+    margin-bottom: 14px;
+    color: var(--dark-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.08px; /* 156% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  &__title{
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+    color: var(--dark-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.016px; /* 118.8% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+
+  }
+}
+
+
+
+
+

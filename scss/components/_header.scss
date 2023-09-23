@@ -1,0 +1,46 @@
+.header{
+
+  &__container{
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+
+    @include tablet{
+      flex-direction: column;
+    }
+
+  }
+}
+
+
+.nav{
+  &__list{
+    // padding: 0 93px;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+
+    @include tablet{
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__link{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+
+
+}
+
+.logo{
+  width: 200px;
+  height: 70px;
+}
