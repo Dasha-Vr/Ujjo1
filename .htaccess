@@ -1,0 +1,1 @@
+Header always set Permission-Policy "geolocation=(), camera=(), microphone=(), payment=(), usb=()"
